@@ -7,8 +7,8 @@ RUN apt-get update &&\
 
 COPY log4cpp.tar.gz ~/
 
-RUN tar xvf log4cpp.tar.gz &&\
-    cd log4cpp &&\
+RUN tar xvf ~/log4cpp.tar.gz &&\
+    cd ~/log4cpp &&\
     ./configure &&\
     make &&\
     make check &&\
